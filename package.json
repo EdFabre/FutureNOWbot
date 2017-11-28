@@ -1,19 +1,29 @@
 {
   "name": "futureNOWbot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "author": "enfabre",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.2.1",
     "discord.js-commando": "^0.9.0",
+    "dotenv": "^4.0.0",
     "erlpack": "hammerandchisel/erlpack",
     "ffmpeg-binaries": "^3.2.2-3",
+    "fs-extra": "^4.0.2",
     "js-video-url-parser": "^0.2.4",
     "libsodium-wrappers": "^0.7.2",
     "node-opus": "^0.2.7",
+    "rekuire": "^0.1.9",
     "sqlite": "^2.9.0",
+    "stacktrace-js": "^2.0.0",
     "uws": "^9.14.0",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2",
+    "winston-loggly-bulk": "^2.0.1",
     "ytdl-core": "^0.18.3",
     "ytpl": "^0.1.9",
     "ytsr": "^0.1.7"
