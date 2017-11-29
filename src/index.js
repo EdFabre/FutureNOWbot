@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 const fs = require("fs-extra");
-const token = config["BOT"].bot_token;
+const config = require('rekuire')('bot_config')
 
 const client = new Commando.Client({
   owner: '170702846260412416'
@@ -30,4 +30,4 @@ client.setProvider(
     .SQLiteProvider(db))
 ).catch(console.error);
 
-client.login(token);
+client.login(config.BOT.bot_token);
