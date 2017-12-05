@@ -14,6 +14,7 @@ client.registry
     ['admins', 'Admins'],
     ['mods', 'Moderators'],
     ['vets', 'Veterans'],
+    ['math', 'Math'],
     ['regs', 'Regular Users']
   ])
 
