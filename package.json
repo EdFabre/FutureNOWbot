@@ -1,13 +1,23 @@
 {
   "name": "futureNOWbot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "pm2 start src/index.js --node-args '--harmony' --name fncbot --watch",
+    "start:prod": "pm2 start src/index.js --node-args '--harmony' --name fncbot",
+    "stop": "pm2 stop fncbot",
+    "restart": "pm2 restart fncbot",
+    "gAdd": "git add .",
+    "gCommit": "git commit -m ",
+    "pub": "npm run gAdd & npm run gCommit -m "
+  },
   "author": "enfabre",
   "license": "MIT",
   "dependencies": {
     "common-tags": "^1.5.1",
     "discord.js": "^11.2.1",
     "discord.js-commando": "^0.9.0",
+    "dotenv": "^4.0.0",
     "erlpack": "hammerandchisel/erlpack",
     "ffmpeg-binaries": "^3.2.2-3",
     "fs-extra": "^4.0.3",
