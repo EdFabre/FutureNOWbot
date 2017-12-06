@@ -8,9 +8,7 @@
     "stop": "pm2 stop fncbot",
     "restart": "yarn & pm2 restart fncbot",
     "clean": "pm2 delete fncbot",
-    "gAdd": "git add .",
-    "gCommit": "git commit -m ",
-    "pub": "gitu 'Uploads done'"
+    "publish": "gitu"
   },
   "author": "enfabre",
   "license": "MIT",
