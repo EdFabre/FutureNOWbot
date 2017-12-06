@@ -10,7 +10,7 @@
     "clean": "pm2 delete fncbot",
     "gAdd": "git add .",
     "gCommit": "git commit -m ",
-    "pub": "npm run gAdd & npm run gCommit -m "
+    "pub": "gitu 'Uploads done'"
   },
   "author": "enfabre",
   "license": "MIT",
@@ -22,6 +22,7 @@
     "erlpack": "hammerandchisel/erlpack",
     "ffmpeg-binaries": "^3.2.2-3",
     "fs-extra": "^4.0.3",
+    "git-upload": "^1.1.4",
     "js-video-url-parser": "^0.2.4",
     "libsodium-wrappers": "^0.7.2",
     "node-opus": "^0.2.7",
