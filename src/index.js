@@ -14,7 +14,8 @@ const Commando = require('discord.js-commando');
 const fs = require("fs-extra");
 
 const client = new Commando.Client({
-  owner: process.env.BOT_OWNER
+  owner: process.env.BOT_OWNER,
+  prefix: process.env.BOT_PREFIX
 });
 
 const path = require('path');

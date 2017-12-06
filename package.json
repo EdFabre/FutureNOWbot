@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start": "pm2 start src/index.js --node-args '--harmony' --name fncbot --watch",
-    "start:prod": "pm2 start src/index.js --node-args '--harmony' --name fncbot",
+    "start": "yarn & pm2 start src/index.js --node-args '--harmony' --name fncbot --watch",
+    "start:prod": "yarn & pm2 start src/index.js --node-args '--harmony' --name fncbot",
     "stop": "pm2 stop fncbot",
-    "restart": "pm2 restart fncbot",
+    "restart": "yarn & pm2 restart fncbot",
+    "clean": "pm2 delete fncbot",
     "gAdd": "git add .",
     "gCommit": "git commit -m ",
     "pub": "npm run gAdd & npm run gCommit -m "
