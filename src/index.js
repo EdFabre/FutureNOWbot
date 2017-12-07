@@ -27,7 +27,8 @@ client.registry
     ['mods', 'Moderators'],
     ['vets', 'Veterans'],
     ['math', 'Math'],
-    ['regs', 'Regular Users']
+    ['regs', 'Regular Users'],
+    ['steam', 'SteamBot Commands']
   ])
 
   // Registers all built-in groups, commands, and argument types
