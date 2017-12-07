@@ -23,12 +23,10 @@ const path = require('path');
 client.registry
   // Registers your custom command groups
   .registerGroups([
-    ['admins', 'Admins'],
-    ['mods', 'Moderators'],
-    ['vets', 'Veterans'],
-    ['math', 'Math'],
-    ['regs', 'Regular Users'],
-    ['steam', 'SteamBot Commands']
+    ['math', 'Math Commands'],
+    ['mod', 'Moderation Commands'],
+    ['music', 'Music Commands'],
+    ['games', 'Game Commands']
   ])
 
   // Registers all built-in groups, commands, and argument types
@@ -44,4 +42,4 @@ client.setProvider(
     .SQLiteProvider(db))
 ).catch(console.error);
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_MUSIC_TOKEN);
