@@ -20,6 +20,7 @@
     "dotenv": "^4.0.0",
     "erlpack": "hammerandchisel/erlpack",
     "ffmpeg-binaries": "^3.2.2-3",
+    "fnc-utils": "^1.0.2",
     "fs-extra": "^4.0.3",
     "git-upload": "^1.1.4",
     "js-video-url-parser": "^0.2.4",

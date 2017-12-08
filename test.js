@@ -1,24 +1,18 @@
-const cryptoRandomString = require('crypto-random-string');
+const Utility = require('fnc-utils');
 
-let id = cryptoRandomString(5);
+// Example Discord command
+var command = 'test-command -f some content'
 
-let cmd = `link-steam nub4athene [${id}]`;
+/* From the Master Bot */
+var masterCommand = Utility.createBotCommand(command);
+// {"name":"test-command","id":"12345","flags":[ f ],"content":"some content"}
+console.log(masterCommand);
 
-parseCommand(cmd)
+/* From the Slave Bot */
+var slaveCommand = Utility.parseBotCommand(masterCommand);
+// { name: 'test-command',
+//   id: '12345',
+//   flags: [ f ],
+//   content: 'some content' }
 
-function parseCommand(command) {
-  var cmdParsed = command.split(' ');
-  var cmdLength = cmdParsed.length - 1;
-  var idRegExp = /\[(.*?)\]/;
-  var matches = idRegExp.exec(cmdParsed[cmdLength]);
-
-  var cmd = cmdParsed[0];
-  var cmdID = matches[1];
-
-  var cmdContent = cmdParsed;
-  // var cmdContent = cmdContent.splice(0, 1);
-
-  console.log(cmd);
-  console.log(cmdID);
-  console.log(cmdContent);
-}
+console.log(slaveCommand);

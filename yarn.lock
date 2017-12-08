@@ -607,6 +607,12 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
+fnc-utils@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fnc-utils/-/fnc-utils-1.0.2.tgz#111a452c7ef7511409f617c6b369bf1fc3f719f8"
+  dependencies:
+    crypto-random-string "^1.0.0"
+
 for-in@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
